@@ -1,20 +1,16 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-
 package poo.labsesion2;
 
-/* Importamos las librerias */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- *
- * @author block
- */
 public class EntSal {
-    public static void main(String[] args) throws IOException {
+
+    public static void main(String arg[]) throws IOException {
         BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
         
         String nombre;
@@ -27,9 +23,10 @@ public class EntSal {
         System.out.println("\nIntroduce tu edad: ");
         edad = Integer.parseInt(entrada.readLine());
         
-        System.out.println("\nIntroduce tu altura: ");
+        System.out.println("\nIntroduce tu altura (en metros): ");
         altura = Double.parseDouble(entrada.readLine());
         
-        System.out.println("\nTe llamas " + nombre + ", tienes " + edad + "años y mides " + altura + " metros.");
+        System.out.print("\nTe llamas " + nombre + ", tienes " + edad + " años y mides " +
+        altura + " metros.");
     }
 }

@@ -4,17 +4,14 @@
  */
 package poo.labsesion2;
 
-/**
- *
- * @author block
- */
 public class OpConv {
     public static void main(String[] args) {
-        int x = 5, y = 2, resi;
+        int x=5, y=2, resi;
         resi = x/y;
         double resd;
         resd = (double) x/y;
-        System.out.println("resi: " + resi);
-        System.out.println("resd: " + resd);
+        System.out.println( "resi: "+resi );
+        System.out.println( "resd: "+resd );
     }
+    
 }

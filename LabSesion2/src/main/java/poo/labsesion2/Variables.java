@@ -4,29 +4,23 @@
  */
 package poo.labsesion2;
 
-/**
- *
- * @author block
- */
 public class Variables {
 
     public static void main(String[] args) {
-        int i = 1;
-        long l = 11;
-        double d = 4.99;
-        float f = 1.82f;
-        boolean b = true;
-        char c = 'a';
-        String cadena = "Cadena";
+        int i=1;
+        long l=1l;
+        double d=1.5;
+        float f=1.5f;
+        boolean b=true;
+        char c='a';
+        String cadena="Esto es una \ncadena";
         
-        // Ahora mostramos por pantalla las variables creadas
-        System.out.println("int: "+i);
-        System.out.println("long: "+l);
-        System.out.println("double: "+d);
-        System.out.println("float: "+f);
-        System.out.println("boolean: "+b);
-        System.out.println("char: "+c);
-        System.out.println("String: "+cadena);        
-        }
-    
+        System.out.println( "i:"+i );
+        System.out.println( "l:"+l );
+        System.out.println( "d:"+d );
+        System.out.println( "i:"+f );
+        System.out.println( "b:"+b );
+        System.out.println( "c:"+c );
+        System.out.println( "cadena:"+cadena );       
+    }
 }

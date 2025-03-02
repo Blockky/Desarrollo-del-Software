@@ -8,7 +8,6 @@ import java.util.Scanner;
 import java.util.Locale;
 
 public class EntSalScanner {
-
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
@@ -21,12 +20,12 @@ public class EntSalScanner {
         nombre = entrada.nextLine();
         
         System.out.println("\nIntroduce tu edad: ");
-        edad = Integer.parseInt(entrada.next());
+        edad = entrada.nextInt();
         
-        System.out.println("\nIntroduce tu altura: ");
-        altura = Double.parseDouble(entrada.next());
+        System.out.println("\nIntroduce tu altura (en metros): ");
+        altura = entrada.nextDouble();
         
-        System.out.println("\nTe llamas " + nombre + ", tienes " + edad + "años y mides " + altura + " metros.");
+        System.out.print("\nTe llamas " + nombre + ", tienes " + edad + " años y mides " +
+        altura + " metros.");
     }
-    
 }
